@@ -1,0 +1,21 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+nav {
+	text-align: center;
+	font-size: 1.5rem;
+	border-bottom: solid #159957 2px;
+}
+
+nav ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+nav li {
+	display: inline;
+	margin: 0 1em 0 0;
+}

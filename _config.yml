@@ -1,0 +1,10 @@
+# Site Settings
+title: exax.org
+description: >
+  exax.org
+baseurl: ""
+url: "https://expertmakeraccelerator.org"
+
+include: ['_pages']
+
+theme: jekyll-theme-cayman
