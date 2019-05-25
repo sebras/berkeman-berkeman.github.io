@@ -7,9 +7,10 @@ permalink: /installation/
 
 ### Build and Runtime Environment
 
-The Accelerator projects has been built, tested, and runs on:
+The Accelerator is built, tested, and runs on:
 
- - Ubuntu16.04 and Debian 9,
+ - Ubuntu18.04 and 16.04,
+ - Debian 9,
  - FreeBSD 11.1
 
 but is in no way limited to these systems or versions.
