@@ -13,7 +13,7 @@ constraints.
 
 
 
-### The problem
+### The Problem
 
 Assume that we have a large dataset stored on disk, and that we want
 to process it as fast as possible.  Fast data processing is important
@@ -116,7 +116,7 @@ _information_ per second by compressing the data on disk:
 Decompression is a lightweight operation on a modern CPU.  **The
 compression typically increases disk bandwidth by 5 to 10 times** on a
 realistic dataset, so this is a favorable trade-off.  (In a data
-science context, uncompressable datasets are often not that
+science context, compressible datasets are often not that
 interesting since they contain a minimum amount of patterns and
 repetitions.)
 
