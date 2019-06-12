@@ -245,6 +245,9 @@ fast operation.
 
 The fastest machine we've used produced these numbers in 2017:
 
+![Performance Test](https://exax.org/assets/performance_numbers_from_installman.jpg)
+
+(Cut from the Accelerator's installation manual.)
 
 
 
