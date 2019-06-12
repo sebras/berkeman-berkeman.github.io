@@ -251,28 +251,6 @@ The fastest machine we've used produced these numbers in 2017:
 
 
 
-
-### What About Networking?
-
-A standard network connection today delivers about 100MB/s, which is a
-few times less than what we can get from a single hard drive.  There
-are much faster networking technologies available, but it is
-expensive.  Before partitioning a problem onto several computers, one
-have to do the math to see where the break-even point is: how many
-networked computers is needed to outperform a single powerful machine?
-And then, one has to consider all the issues that comes with cluster
-computing, like administration and availability.  But also hardware
-cost, power consumption, and cooling.
-
-The Accelerator is designed using a client-server approach, and one of
-the reasons for that was that it should be able to execute in parallel
-on several machines.  Since then, we have worked on several large
-projects, with tens of billions of records, but never seen the need to
-go beyond one single computer.  Extra computers have been for
-reduncancy only.
-
-
-
 ### Summary
 
 The Accelerator is using a set of low level basic techniques such as
