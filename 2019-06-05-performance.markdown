@@ -241,7 +241,7 @@ fast operation.
 
 
 
-### Some performance figures
+### Some Performance Figures
 
 The fastest machine we've used produced these numbers in 2017:
 
