@@ -6,10 +6,10 @@ categories: performance
 ---
 
 The Accelerator is able to process hundreds of millions of data rows
-per second on a single computer.  This post will discuss the
-performance bottlenecks of a modern computer and explain how the
-Accelerator is optimized towards maximum speed given these hardware
-constraints.
+per second on a single computer using the Python programming language.
+This post will discuss the performance bottlenecks of a modern
+computer and explain how the Accelerator is optimized towards maximum
+speed given these hardware constraints.
 
 
 
