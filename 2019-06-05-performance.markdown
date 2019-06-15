@@ -233,7 +233,7 @@ will never have to merge any results between slices/CPUs if we compute
 some information per user.
 
 This is the opposite of _Map-Reduce_, where data is _partitioned
-before processing_ instead of _merged after processing_.  Since
+before_ processing instead of _merged after_ processing.  Since
 hashing is done before data computations, it has to be carried out
 only once, whereas for map-reduce, reduction is a key step in the
 processing.  Furthermore, hashing a dataset also happens to be a very
@@ -243,7 +243,8 @@ fast operation.
 
 ### Some Performance Figures
 
-The fastest machine we've used produced these numbers in 2017:
+The fastest machine we've used produced the following numbers in 2017.
+Note that all processing is done in the Python language!
 
 ![Performance Test](https://exax.org/assets/performance_numbers_from_installman.jpg)
 
