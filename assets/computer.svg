@@ -1,0 +1,82 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: fig2dev Version 3.2 Patchlevel 5e -->
+<!-- CreationDate: Mon Jun 24 21:15:32 2019 -->
+<!-- Magnification: 1.050 -->
+<svg	xmlns="http://www.w3.org/2000/svg"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	width="6.6in" height="1.8in"
+	viewBox="596 8858 7977 2124">
+<g style="stroke-width:.025in; fill:none">
+<!-- Circle -->
+<circle cx="1133" cy="9921" r="406"
+ style="stroke:#606c71;stroke-width:16;"/>
+<!-- Circle -->
+<circle cx="1133" cy="9921" r="133"
+ style="stroke:#606c71;stroke-width:16;"/>
+<!-- Line -->
+<polyline points="2078,9921
+3496,9921
+" style="stroke:#606c71;stroke-width:16;
+stroke-linejoin:miter; stroke-linecap:butt;
+"/>
+<!-- Arrowhead on XXXpoint 2078 9921 - 3716 9921-->
+<polygon points="3510 9968
+3699 9921
+3510 9874
+3510 9968
+
+" style="stroke:#606c71;stroke-width:8;stroke-miterlimit:8;
+fill:#606c71;"/>
+<!-- Line -->
+<polyline points="5858,9921
+7275,9921
+" style="stroke:#606c71;stroke-width:16;
+stroke-linejoin:miter; stroke-linecap:butt;
+"/>
+<!-- Arrowhead on XXXpoint 5858 9921 - 7496 9921-->
+<polygon points="7290 9968
+7479 9921
+7290 9874
+7290 9968
+
+" style="stroke:#606c71;stroke-width:8;stroke-miterlimit:8;
+fill:#606c71;"/>
+<!-- Line: box -->
+<rect x="7606" y="9448" width="944" height="944" rx="62" 
+style="stroke:#606c71;stroke-width:16;
+stroke-linejoin:miter; stroke-linecap:butt;
+"/>
+<!-- Line: box -->
+<rect x="3826" y="8881" width="1889" height="2078" rx="62" 
+style="stroke:#606c71;stroke-width:16;
+stroke-linejoin:miter; stroke-linecap:butt;
+"/>
+<!-- Line -->
+<polygon points="1606,10251
+1370,9874
+1700,10157
+1700,10251
+1606,10251
+" style="stroke:#606c71;stroke-width:16;
+stroke-linejoin:miter; stroke-linecap:butt;
+fill:#ffffff;
+"/>
+<!-- Line: box -->
+<rect x="661" y="9448" width="1275" height="944" rx="62" 
+style="stroke:#606c71;stroke-width:16;
+stroke-linejoin:miter; stroke-linecap:butt;
+"/>
+<!-- Text -->
+<text xml:space="preserve" x="2834" y="9826" fill="#606c71"  font-family="Helvetica" font-style="normal" font-weight="normal" font-size="227" text-anchor="middle">100+ MB/s</text>
+<!-- Text -->
+<text xml:space="preserve" x="6661" y="9826" fill="#606c71"  font-family="Helvetica" font-style="normal" font-weight="normal" font-size="227" text-anchor="middle">1000+ MB/s</text>
+<!-- Text -->
+<text xml:space="preserve" x="8078" y="10015" fill="#606c71"  font-family="Helvetica" font-style="normal" font-weight="normal" font-size="227" text-anchor="middle">CPU</text>
+<!-- Text -->
+<text xml:space="preserve" x="4771" y="10015" fill="#606c71"  font-family="Helvetica" font-style="normal" font-weight="normal" font-size="227" text-anchor="middle">Memory</text>
+<!-- Text -->
+<text xml:space="preserve" x="1322" y="9354" fill="#606c71"  font-family="Helvetica" font-style="normal" font-weight="normal" font-size="227" text-anchor="middle">Hard drive</text>
+</g>
+</svg>

@@ -1,0 +1,161 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: fig2dev Version 3.2 Patchlevel 5e -->
+<!-- CreationDate: Mon Jun 24 21:33:22 2019 -->
+<!-- Magnification: 1.050 -->
+<svg	xmlns="http://www.w3.org/2000/svg"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	width="6.7in" height="3.3in"
+	viewBox="-1574 12213 8089 4007">
+<g style="stroke-width:.025in; fill:none">
+<!-- Line -->
+<polyline points="2456,12236
+2456,14031
+" style="stroke:#606c71;stroke-width:8;
+stroke-linejoin:miter; stroke-linecap:butt;
+stroke-dasharray:10 31;"/>
+<!-- Line: box -->
+<rect x="1322" y="12236" width="2267" height="1795" rx="0" 
+style="stroke:#606c71;stroke-width:16;
+stroke-linejoin:miter; stroke-linecap:butt;
+"/>
+<!-- Line: box -->
+<rect x="1322" y="14834" width="2267" height="1133" rx="0" 
+style="stroke:#606c71;stroke-width:16;
+stroke-linejoin:miter; stroke-linecap:butt;
+"/>
+<!-- Line -->
+<polyline points="2456,14834
+2456,15968
+" style="stroke:#606c71;stroke-width:8;
+stroke-linejoin:miter; stroke-linecap:butt;
+stroke-dasharray:10 31;"/>
+<!-- Line: box -->
+<rect x="4157" y="14834" width="2267" height="1133" rx="0" 
+style="stroke:#606c71;stroke-width:16;
+stroke-linejoin:miter; stroke-linecap:butt;
+"/>
+<!-- Line -->
+<polyline points="5291,14834
+5291,15968
+" style="stroke:#606c71;stroke-width:8;
+stroke-linejoin:miter; stroke-linecap:butt;
+stroke-dasharray:10 31;"/>
+<!-- Line -->
+<polyline points="2456,14173
+2456,14503
+" style="stroke:#606c71;stroke-width:32;
+stroke-linejoin:miter; stroke-linecap:butt;
+"/>
+<!-- Arrowhead on XXXpoint 2456 14173 - 2456 14740-->
+<polygon points="2409 14534
+2456 14723
+2503 14534
+2409 14534
+
+" style="stroke:#606c71;stroke-width:8;stroke-miterlimit:8;
+fill:#606c71;"/>
+<!-- Line: box -->
+<rect x="-1511" y="14834" width="2267" height="1133" rx="0" 
+style="stroke:#606c71;stroke-width:16;
+stroke-linejoin:miter; stroke-linecap:butt;
+"/>
+<!-- Line -->
+<polyline points="3259,14173
+4639,14633
+" style="stroke:#606c71;stroke-width:32;
+stroke-linejoin:miter; stroke-linecap:butt;
+"/>
+<!-- Arrowhead on XXXpoint 3259 14173 - 4862 14707-->
+<polygon points="4653 14686
+4847 14702
+4682 14597
+4653 14686
+
+" style="stroke:#606c71;stroke-width:8;stroke-miterlimit:8;
+fill:#606c71;"/>
+<!-- Line -->
+<polyline points="-377,14834
+-377,15968
+" style="stroke:#606c71;stroke-width:8;
+stroke-linejoin:miter; stroke-linecap:butt;
+stroke-dasharray:10 31;"/>
+<!-- Line -->
+<polyline points="1653,14173
+272,14633
+" style="stroke:#606c71;stroke-width:32;
+stroke-linejoin:miter; stroke-linecap:butt;
+"/>
+<!-- Arrowhead on XXXpoint 1653 14173 - 49 14707-->
+<polygon points="228 14597
+65 14702
+258 14686
+228 14597
+
+" style="stroke:#606c71;stroke-width:8;stroke-miterlimit:8;
+fill:#606c71;"/>
+<!-- Text -->
+<text xml:space="preserve" x="-1417" y="15118" fill="#606c71"  font-family="Courier" font-style="normal" font-weight="bold" font-size="227" text-anchor="start">user0</text>
+<!-- Text -->
+<text xml:space="preserve" x="-236" y="15118" fill="#606c71"  font-family="Courier" font-style="normal" font-weight="bold" font-size="227" text-anchor="start">movie0</text>
+<!-- Text -->
+<text xml:space="preserve" x="-1417" y="15322" fill="#606c71"  font-family="Courier" font-style="normal" font-weight="bold" font-size="227" text-anchor="start">user0</text>
+<!-- Text -->
+<text xml:space="preserve" x="-236" y="15322" fill="#606c71"  font-family="Courier" font-style="normal" font-weight="bold" font-size="227" text-anchor="start">movie2</text>
+<!-- Text -->
+<text xml:space="preserve" x="-1417" y="15511" fill="#606c71"  font-family="Courier" font-style="normal" font-weight="bold" font-size="227" text-anchor="start">user3</text>
+<!-- Text -->
+<text xml:space="preserve" x="-236" y="15511" fill="#606c71"  font-family="Courier" font-style="normal" font-weight="bold" font-size="227" text-anchor="start">movie5</text>
+<!-- Text -->
+<text xml:space="preserve" x="1417" y="12472" fill="#606c71"  font-family="Courier" font-style="normal" font-weight="bold" font-size="227" text-anchor="start">user0</text>
+<!-- Text -->
+<text xml:space="preserve" x="2598" y="12472" fill="#606c71"  font-family="Courier" font-style="normal" font-weight="bold" font-size="227" text-anchor="start">movie0</text>
+<!-- Text -->
+<text xml:space="preserve" x="1417" y="12692" fill="#606c71"  font-family="Courier" font-style="normal" font-weight="bold" font-size="227" text-anchor="start">user2</text>
+<!-- Text -->
+<text xml:space="preserve" x="2598" y="12692" fill="#606c71"  font-family="Courier" font-style="normal" font-weight="bold" font-size="227" text-anchor="start">movie1</text>
+<!-- Text -->
+<text xml:space="preserve" x="1417" y="12913" fill="#606c71"  font-family="Courier" font-style="normal" font-weight="bold" font-size="227" text-anchor="start">user0</text>
+<!-- Text -->
+<text xml:space="preserve" x="2598" y="12913" fill="#606c71"  font-family="Courier" font-style="normal" font-weight="bold" font-size="227" text-anchor="start">movie2</text>
+<!-- Text -->
+<text xml:space="preserve" x="1417" y="13133" fill="#606c71"  font-family="Courier" font-style="normal" font-weight="bold" font-size="227" text-anchor="start">user16</text>
+<!-- Text -->
+<text xml:space="preserve" x="2598" y="13133" fill="#606c71"  font-family="Courier" font-style="normal" font-weight="bold" font-size="227" text-anchor="start">movie3</text>
+<!-- Text -->
+<text xml:space="preserve" x="1417" y="13354" fill="#606c71"  font-family="Courier" font-style="normal" font-weight="bold" font-size="227" text-anchor="start">user7</text>
+<!-- Text -->
+<text xml:space="preserve" x="2598" y="13354" fill="#606c71"  font-family="Courier" font-style="normal" font-weight="bold" font-size="227" text-anchor="start">movie4</text>
+<!-- Text -->
+<text xml:space="preserve" x="1417" y="13574" fill="#606c71"  font-family="Courier" font-style="normal" font-weight="bold" font-size="227" text-anchor="start">user3</text>
+<!-- Text -->
+<text xml:space="preserve" x="2598" y="13574" fill="#606c71"  font-family="Courier" font-style="normal" font-weight="bold" font-size="227" text-anchor="start">movie5</text>
+<!-- Text -->
+<text xml:space="preserve" x="1417" y="13795" fill="#606c71"  font-family="Courier" font-style="normal" font-weight="bold" font-size="227" text-anchor="start">user5</text>
+<!-- Text -->
+<text xml:space="preserve" x="2598" y="13795" fill="#606c71"  font-family="Courier" font-style="normal" font-weight="bold" font-size="227" text-anchor="start">movie6</text>
+<!-- Text -->
+<text xml:space="preserve" x="1417" y="15118" fill="#606c71"  font-family="Courier" font-style="normal" font-weight="bold" font-size="227" text-anchor="start">user16</text>
+<!-- Text -->
+<text xml:space="preserve" x="2598" y="15118" fill="#606c71"  font-family="Courier" font-style="normal" font-weight="bold" font-size="227" text-anchor="start">movie3</text>
+<!-- Text -->
+<text xml:space="preserve" x="1417" y="15338" fill="#606c71"  font-family="Courier" font-style="normal" font-weight="bold" font-size="227" text-anchor="start">user7</text>
+<!-- Text -->
+<text xml:space="preserve" x="2598" y="15338" fill="#606c71"  font-family="Courier" font-style="normal" font-weight="bold" font-size="227" text-anchor="start">movie4</text>
+<!-- Text -->
+<text xml:space="preserve" x="4251" y="15102" fill="#606c71"  font-family="Courier" font-style="normal" font-weight="bold" font-size="227" text-anchor="start">user2</text>
+<!-- Text -->
+<text xml:space="preserve" x="5433" y="15102" fill="#606c71"  font-family="Courier" font-style="normal" font-weight="bold" font-size="227" text-anchor="start">movie1</text>
+<!-- Text -->
+<text xml:space="preserve" x="4251" y="15307" fill="#606c71"  font-family="Courier" font-style="normal" font-weight="bold" font-size="227" text-anchor="start">user5</text>
+<!-- Text -->
+<text xml:space="preserve" x="5433" y="15307" fill="#606c71"  font-family="Courier" font-style="normal" font-weight="bold" font-size="227" text-anchor="start">movie6</text>
+<!-- Text -->
+<text xml:space="preserve" x="-1559" y="16204" fill="#606c71"  font-family="Helvetica" font-style="normal" font-weight="normal" font-size="227" text-anchor="start">SLICE0</text>
+<!-- Text -->
+<text xml:space="preserve" x="1275" y="16204" fill="#606c71"  font-family="Helvetica" font-style="normal" font-weight="normal" font-size="227" text-anchor="start">SLICE1</text>
+<!-- Text -->
+<text xml:space="preserve" x="4110" y="16204" fill="#606c71"  font-family="Helvetica" font-style="normal" font-weight="normal" font-size="227" text-anchor="start">SLICE2</text>
+</g>
+</svg>
