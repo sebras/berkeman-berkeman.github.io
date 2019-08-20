@@ -9,9 +9,9 @@ permalink: /installation/
 
 The Accelerator is built, tested, and runs on:
 
- - Ubuntu18.04 and 16.04,
- - Debian 9,
- - FreeBSD 11.1
+ - Ubuntu 16.04, 18.04
+ - Debian 8, 9
+ - FreeBSD 11.1, 11.2
 
 but is in no way limited to these systems or versions.
 
