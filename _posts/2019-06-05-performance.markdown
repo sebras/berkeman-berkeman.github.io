@@ -295,9 +295,3 @@ and very low cost.
 
 
 
-### Additional Resources
-
-[The Accelerator's Homepage (exax.org)](https://exax.org)  
-[The Accelerator on Github/eBay](https://github.com/ebay/accelerator)  
-[Installation Manual with Performance Test](https://berkeman.github.io/pdf/acc_install.pdf)  
-[Reference Manual](https://berkeman.github.io/pdf/acc_manual.pdf)  
