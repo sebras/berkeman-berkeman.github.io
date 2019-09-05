@@ -1,0 +1,102 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: fig2dev Version 3.2 Patchlevel 5e -->
+<!-- CreationDate: Thu Sep  5 21:19:55 2019 -->
+<!-- Magnification: 1.050 -->
+<svg	xmlns="http://www.w3.org/2000/svg"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	width="3.2in" height="2.2in"
+	viewBox="11751 8953 3847 2637">
+<g style="stroke-width:.025in; fill:none">
+<!-- Ellipse -->
+<ellipse transform="translate(14881,10697) rotate(-0.00000000)" rx="708" ry="283"
+ style="stroke:#b00000;stroke-width:8;"/>
+<!-- Line -->
+<polyline points="14409,9448
+14881,9448
+14881,10267
+" style="stroke:#b00000;stroke-width:8;
+stroke-linejoin:miter; stroke-linecap:butt;
+"/>
+<!-- Arrowhead on XXXpoint 14881 9448 - 14881 10409-->
+<polygon points="14850 10266
+14881 10392
+14913 10266
+14850 10266
+
+" style="stroke:#b00000;stroke-width:8;stroke-miterlimit:8;
+fill:#b00000;"/>
+<!-- Line -->
+<polyline points="14881,11007
+14881,11338
+11935,11338
+" style="stroke:#b00000;stroke-width:8;
+stroke-linejoin:miter; stroke-linecap:butt;
+"/>
+<!-- Arrowhead on XXXpoint 14881 11338 - 11795 11338-->
+<polygon points="11938 11307
+11812 11338
+11938 11370
+11938 11307
+
+" style="stroke:#b00000;stroke-width:8;stroke-miterlimit:8;
+fill:#b00000;"/>
+<!-- Line -->
+<polygon points="12992,9448
+13700,8976
+14409,9448
+13700,9921
+12992,9448
+" style="stroke:#606c71;stroke-width:16;
+stroke-linejoin:miter; stroke-linecap:butt;
+"/>
+<!-- Line -->
+<polyline points="11811,9448
+12818,9448
+" style="stroke:#606c71;stroke-width:8;
+stroke-linejoin:miter; stroke-linecap:butt;
+"/>
+<!-- Arrowhead on XXXpoint 11811 9448 - 12960 9448-->
+<polygon points="12817 9480
+12943 9448
+12817 9417
+12817 9480
+
+" style="stroke:#606c71;stroke-width:8;stroke-miterlimit:8;
+fill:#606c71;"/>
+<!-- Line -->
+<polyline points="13700,9921
+13700,10393
+11888,10393
+" style="stroke:#00b000;stroke-width:8;
+stroke-linejoin:miter; stroke-linecap:butt;
+"/>
+<!-- Arrowhead on XXXpoint 13700 10393 - 11748 10393-->
+<polygon points="11890 10362
+11764 10393
+11890 10425
+11890 10362
+
+" style="stroke:#00b000;stroke-width:8;stroke-miterlimit:8;
+fill:#00b000;"/>
+<!-- Text -->
+<text xml:space="preserve" x="11811" y="11574" fill="#606c71"  font-family="Times" font-style="normal" font-weight="normal" font-size="252" text-anchor="start">return reference</text>
+<!-- Text -->
+<text xml:space="preserve" x="14881" y="10771" fill="#606c71"  font-family="Times" font-style="normal" font-weight="normal" font-size="252" text-anchor="middle">build job!</text>
+<!-- Text -->
+<text xml:space="preserve" x="13700" y="9779" fill="#606c71"  font-family="Times" font-style="normal" font-weight="normal" font-size="252" text-anchor="middle">?</text>
+<!-- Text -->
+<text xml:space="preserve" x="13700" y="9354" fill="#606c71"  font-family="Times" font-style="normal" font-weight="normal" font-size="252" text-anchor="middle">result</text>
+<!-- Text -->
+<text xml:space="preserve" x="13700" y="9543" fill="#606c71"  font-family="Times" font-style="normal" font-weight="normal" font-size="252" text-anchor="middle">exists</text>
+<!-- Text -->
+<text xml:space="preserve" x="13653" y="10299" fill="#00b000"  font-family="Times" font-style="normal" font-weight="normal" font-size="252" text-anchor="end">YES</text>
+<!-- Text -->
+<text xml:space="preserve" x="14834" y="9685" fill="#b00000"  font-family="Times" font-style="normal" font-weight="normal" font-size="252" text-anchor="end">NO</text>
+<!-- Text -->
+<text xml:space="preserve" x="11811" y="10629" fill="#606c71"  font-family="Times" font-style="normal" font-weight="normal" font-size="252" text-anchor="start">return reference</text>
+<!-- Text -->
+<text xml:space="preserve" x="11811" y="9401" fill="#606c71"  font-family="Times" font-style="normal" font-weight="normal" font-size="252" text-anchor="start">build()</text>
+</g>
+</svg>

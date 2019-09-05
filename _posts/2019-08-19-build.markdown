@@ -1,0 +1,231 @@
+---
+layout: post
+title:  "The Accelerator's Build System"
+date:   2019-08-19 00:00:00
+categories: examples
+---
+
+This post describes the basics of the Accelerator's build system, how
+it works, why it is designed the way it is, and how it helps _reducing
+both execution time and probability of error_.
+
+This is an overview article.  Please see the Accelerator's User's
+Reference for details.
+
+
+
+
+### The Accelerator Job in Brief
+
+The _job_ is the atomic unit of program execution on the Accelerator.
+Jobs are powerful, they can execute parallel code, read and store
+large amounts of data very efficiently, and much more.  In fact, the
+job is a topic of its own, and we will not go into details here.  See
+references for more information.
+
+The things we need to know about jobs at this point relates to code
+execution.  "Building a job" means executing a piece of code.  When a
+job has completed execution, all information associated with it is
+stored in a job specific directory to be used at any time.  The return
+value from a job build operation is a reference to such a directory.
+
+
+
+
+#### Job Build is Conditional
+A job is only built if it has not been built before, see figure below.
+
+<p align="center"><img src="{{ site.url }}/assets/build_conditional.svg"> </p>
+
+A job build operation always return a reference to the job.  The
+reference is returned immediately if it already exists.  Otherwise,
+the reference to the new job is returned as soon as it finishes
+execution.
+
+To know if the job has been built before, the Accelerator keeps a
+database containing information on all successfully completed build
+requests.  This information includes a hash digest of each job's
+source code, and is sufficient to uniquely define any job.  Each
+build request is compared to this database.
+
+
+
+
+
+#### Inputs to the Build Call
+There are three types of input to a job at build time:
+
+ - the program source code,
+ - references to input data, and
+ - input parameters (i.e. options).
+
+All of these are used to check if a job has been built already.
+
+
+
+
+#### Job Building Process
+
+When a job is being built, the following happens:
+
+  1. A new job directory is created.
+  2. Everything needed to execute the job is copied into the job directory.
+  3. New processes are forked that learns what to do by reading
+     the information stored in the job directory.
+  4. The new job is executing and output is stored in the job
+     directory.
+  5. When the job completes, additional profiling information is
+     stored in the job directory.
+
+Thus, everything related to a job be found in its job directory.  For
+this reason, jobs are transparent and easily observable.
+
+
+
+
+### Job Dependencies
+
+A complex processing task can be divided into a number of different
+jobs, making the task easier to write, test, and maintain.  A job
+reference can be used as input parameter to another job, making it
+straightforward to have jobs depend on each other.  Using job
+references it is possible to build any kind of directed job flow graph
+to solve complex problems, see example below.
+
+<p align="center"><img src="{{ site.url }}/assets/build_jobgraph.svg"> </p>
+
+In code, it may look like this
+```python
+def main(urd):
+    jobid1 = urd.build('method1')
+    jobid2 = urd.build('method2', jobids=dict(pred=jobid1))
+    jobid3 = urd.build('method3', jobids=dict(pred=jobid2))
+    jobid4 = urd.build('method4', jobids=dict(pred=jobid1))
+    jobid5 = urd.build('method5', jobids=dict(pred=jobid1))
+    jobid6 = urd.build('method6', jobids=dict(pred1=jobid4, pred2=jobid5))
+    jobid7 = urd.build('method7', jobids=dict(pred1=jobid3, pred2=jobid6))
+```
+
+The build system is somewhat similar to traditional "Makefiles", with
+the big difference that all previous "makes" are stored in job
+directories to be fetched immediately when called for.  This implies,
+for example, that a developer can switch back and forth between
+different versions, or input data for that matter, without
+re-executing any code.
+
+
+
+
+
+
+
+<!-- ### Datasets and Parallel Data Processing -->
+
+<!-- Although it is not the key focus of this post, it should be mentioned -->
+<!-- that jobs could also be data containers.  The Accelerator's _dataset_, -->
+<!-- capable of efficiently storing billions of rows of data with ease, is -->
+<!-- build on top of the jobs paradigm.  Having jobs referencing eachother -->
+<!-- is then used to extend datasets, either with new columns or with new -->
+<!-- rows, with minimal overhead.  But this is the topic of another post, -->
+<!-- and full details are found in the Accelerator's manual. -->
+
+
+
+
+### Why this Build System?
+
+The Accelerator's build system is designed for _reproducibility_.  The
+same input to the same program should lead to the same output --
+always.  There is no need to build a job that shares the same inputs
+and source code as a job that is already built.  Its output will be
+the same as the existing job.  If nothing has been changed since the
+last run, old results could be looked up and returned immediately.
+
+Reproducibility is key, and the build system brings even more
+important features that we'll describe in the following sections.
+
+
+
+
+#### Observability and Transparency
+
+All Information About a Job is Stored Together in a Single Directory.
+Having all _results_, _source code_, _parameters_, and _profiling
+information_ in one place is great for **observability** and
+**transparency**.  Looking into a job directory makes it totally clear
+which program, parameter set, and input data that was used to generate
+a particular result.
+
+
+
+
+#### Saving Execution Time
+
+Completed jobs will be _re-used_ if possible.  This **saves time** and
+energy.
+
+Also, a change in the source code will only affect the current job and
+the following jobs depending on it.  Only parts that are affected by
+the change will be re-executed, and not the whole flow graph, which
+again saves time.
+
+
+
+
+#### Reproducibility and Transparency
+
+The build system guarantees that *parts affected by a modification
+will be re-executed*.  Assuming the build script has been run after a
+modification, the output will be **up to date** with the modification.
+There is never any question about which input data and which source
+code that has been used to compute any result.
+
+
+
+
+
+
+
+<!-- #### Validation, Does This Output Correspond to this Program/Data/Parameters? -->
+<!-- A build script can be run at any time to retrieve references to all -->
+<!-- jobs built by it.  Thus, by reading the script and checking the -->
+<!-- referenced job directories, it is clear what input and parameters that -->
+<!-- are in use to create a certain output. -->
+
+<!-- It answers questions like these -->
+
+<!--  - **"- Did I run this script before or after the code change?"**  Just run -->
+<!--     the build script and see what happens.  It if returns immediately -->
+<!--     it is up to date.  If some jobs are re-executed, there was a -->
+<!--     modification in the source code that was made after the last run. -->
+	
+<!--  - **"- Does this output take the latest data into account?"** -->
+<!--    Again, read and the run the script and see. -->
+
+
+
+#### Design Methodology
+
+A good development strategy is to design incrementally, adding one job
+after the other that share intermediate results.  This fits perfectly
+with the Accelerator's build system.  At the current development
+point, all previous jobs have been built already, so execution is
+limited to the current part, while its inputs are automatically
+fetched directly from previous jobs.  This is efficient and simple.
+No unnecessary code is executed and no time is spent manually
+book-keeping intermediate results.
+
+
+
+
+### Conclusion
+
+There are several benefits with the Accelerator's build system, of
+which the most important is that it brings _reproducibility_ and
+_transparency_.  This property typically also leads to _reduced
+execution time_.  We are not likely to mess up combinations of input
+data, source code, and results, since the connections are automatic by
+design.  No manual book-keeping is required.  To this we should add
+that jobs provide efficient parallel processing as well as high speed
+data storage and retrieval capabilities, but these are topics for
+other posts.
