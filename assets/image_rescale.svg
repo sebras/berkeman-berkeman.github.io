@@ -1,0 +1,47 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: fig2dev Version 3.2 Patchlevel 5e -->
+<!-- CreationDate: Thu Jul 11 10:04:13 2019 -->
+<!-- Magnification: 1.050 -->
+<svg	xmlns="http://www.w3.org/2000/svg"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	width="4.4in" height="1.4in"
+	viewBox="3038 27606 5241 1697">
+<g style="stroke-width:.025in; fill:none">
+<!-- Line: box -->
+<rect x="7700" y="28393" width="566" height="377" rx="0" 
+style="stroke:#606c71;stroke-width:8;
+stroke-linejoin:miter; stroke-linecap:butt;
+"/>
+<!-- Line: box -->
+<rect x="3307" y="27874" width="2834" height="1417" rx="0" 
+style="stroke:#606c71;stroke-width:8;
+stroke-linejoin:miter; stroke-linecap:butt;
+"/>
+<!-- Line -->
+<polyline points="6425,28582
+7181,28582
+" style="stroke:#606c71;stroke-width:8;
+stroke-linejoin:miter; stroke-linecap:butt;
+"/>
+<!-- Arrowhead on XXXpoint 6425 28582 - 7291 28582-->
+<polygon points="7180 28605
+7274 28582
+7180 28558
+7180 28605
+
+" style="stroke:#606c71;stroke-width:8;stroke-miterlimit:8;
+fill:#606c71;"/>
+<!-- Text -->
+<text xml:space="preserve" x="4724" y="27826" fill="#606c71"  font-family="Times" font-style="normal" font-weight="normal" font-size="227" text-anchor="middle">4096</text>
+<!-- Text -->
+<g transform="translate(3259,28582) rotate(-90.00021046)" >
+<text xml:space="preserve" x="0" y="0" fill="#606c71"  font-family="Times" font-style="normal" font-weight="normal" font-size="227" text-anchor="middle">2160</text>
+</g><!-- Text -->
+<text xml:space="preserve" x="7984" y="28346" fill="#606c71"  font-family="Times" font-style="normal" font-weight="normal" font-size="227" text-anchor="middle">640</text>
+<!-- Text -->
+<g transform="translate(7653,28582) rotate(-90.00021046)" >
+<text xml:space="preserve" x="0" y="0" fill="#606c71"  font-family="Times" font-style="normal" font-weight="normal" font-size="227" text-anchor="middle">338</text>
+</g></g>
+</svg>
