@@ -6,8 +6,9 @@ categories: examples
 ---
 
 This post describes the basics of the Accelerator's build system, how
-it works, why it is designed the way it is, and how it helps _reducing
-both execution time and probability of error_.
+it works, why it is designed the way it is, and how it helps to
+_automate your work_ while _reducing both execution time and probability
+of error_.
 
 This is an overview article.  Please see the Accelerator's User's
 Reference for details.
@@ -26,8 +27,9 @@ references for more information.
 The things we need to know about jobs at this point relates to code
 execution.  "Building a job" means executing a piece of code.  When a
 job has completed execution, all information associated with it is
-stored in a job specific directory to be used at any time.  The return
-value from a job build operation is a reference to such a directory.
+stored in a job specific directory to be used at any time.  The
+returned job instance contains convenience functions that wraps and
+operates on the job data.
 
 
 
@@ -37,16 +39,15 @@ A job is only built if it has not been built before, see figure below.
 
 <p align="center"><img src="{{ site.url }}/assets/build_conditional.svg"> </p>
 
-A job build operation always return a reference to the job.  The
-reference is returned immediately if it already exists.  Otherwise,
-the reference to the new job is returned as soon as it finishes
-execution.
+A job build operation always return a job instance.  The job instance
+is returned immediately if it already exists.  Otherwise, it is
+returned as soon as it finishes execution.
 
 To know if the job has been built before, the Accelerator keeps a
 database containing information on all successfully completed build
 requests.  This information includes a hash digest of each job's
-source code, and is sufficient to uniquely define any job.  Each
-build request is compared to this database.
+source code, and is sufficient to uniquely define any job.  Each build
+request is compared to this database.
 
 
 
@@ -97,13 +98,13 @@ to solve complex problems, see example below.
 In code, it may look like this
 ```python
 def main(urd):
-    jobid1 = urd.build('method1')
-    jobid2 = urd.build('method2', jobids=dict(pred=jobid1))
-    jobid3 = urd.build('method3', jobids=dict(pred=jobid2))
-    jobid4 = urd.build('method4', jobids=dict(pred=jobid1))
-    jobid5 = urd.build('method5', jobids=dict(pred=jobid1))
-    jobid6 = urd.build('method6', jobids=dict(pred1=jobid4, pred2=jobid5))
-    jobid7 = urd.build('method7', jobids=dict(pred1=jobid3, pred2=jobid6))
+    job1 = urd.build('method1')
+    job2 = urd.build('method2', jobs=dict(pred=job1))
+    job3 = urd.build('method3', jobs=dict(pred=job2))
+    job4 = urd.build('method4', jobs=dict(pred=job1))
+    job5 = urd.build('method5', jobs=dict(pred=job1))
+    job6 = urd.build('method6', jobs=dict(pred1=job4, pred2=job5))
+    job7 = urd.build('method7', jobs=dict(pred1=job3, pred2=job6))
 ```
 
 The build system is somewhat similar to traditional "Makefiles", with
@@ -180,6 +181,15 @@ modification, the output will be **up to date** with the modification.
 There is never any question about which input data and which source
 code that has been used to compute any result.
 
+
+
+
+#### Automation
+
+The Accelerator is designed _both_ for various analysis tasks _and_ to
+run as a live production system.  The build script is an efficient way
+to record sequences of tasks that can be carried out automatically
+with a minimum of unneccessary re-executions.
 
 
 
