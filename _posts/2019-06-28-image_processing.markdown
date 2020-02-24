@@ -72,9 +72,9 @@ from PIL import Image
 
 options=dict(files=[], size=(100, 100))
 
-def analysis(sliceno, params):
+def analysis(sliceno, job):
     # work on a single slice of all filenames
-    files = options.files[sliceno::params.slices]
+    files = options.files[sliceno::job.params.slices]
     for fn in files:
         im = Image.open(fn)
         im.thumbnail(options.size)
@@ -82,7 +82,7 @@ def analysis(sliceno, params):
 ```
 
 The function `analysis()` will be forked and executed in
-`params.slices` parallel processes.  Each process receives a unique
+`job.params.slices` parallel processes.  Each process receives a unique
 number between zero and the number of slices in the `sliceno`
 variable.  Input options are the list of image files and the shape of
 the output thumbnail image.
@@ -127,9 +127,9 @@ the partitioning of the code
 ```python
 def main(urd):
     files = sorted(glob.glob(os.path.join(path, 'file*.jpg')))
-    jid_imp = urd.build('import_images', options=dict(files=files))
-    jid_tmb = urd.build('thumbnailer',   options=dict(size=(256,256), datasets=dict(source=jid_imp)))
-    jid_exp = urd.build('export_images', options=dict(column='thumb', datasets=dict(source=jid_tmb)))
+    job_imp = urd.build('import_images', options=dict(files=files))
+    job_tmb = urd.build('thumbnailer',   options=dict(size=(256,256), datasets=dict(source=job_imp)))
+    job_exp = urd.build('export_images', options=dict(column='thumb', datasets=dict(source=job_tmb)))
 ```
 
 The most interesting program is the one in the middle, `thumbnailer`,
@@ -220,10 +220,10 @@ and we run it by adding this line to the build script
 
 ```
     ...
-    u.build('shapehist', datasets=dict(source=jid_imp))
+    u.build('shapehist', datasets=dict(source=job_imp))
 ```
 
-Here, `jid_imp` is a reference to the import job that was run
+Here, `job_imp` is a reference to the import job that was run
 previously.  The `shapehist` program will thus always run on the
 correct data.  Furthermore, `shapehist` makes use of the available
 `shape` column in the dataset (which was generated as a by-product in
@@ -310,13 +310,14 @@ The running process is forked into a number of parallel processes
 executing the `analysis()` function shown below.  The writer object
 returned by `prepare()` is input and referenced by the name
 `prepare_res`.  The input `sliceno` holds unique number for the
-process, and `params` is a dict containing various variables, among
-them `slices`, which holds the total number of parallel processes.
+process, and `job` is a dict containing various variables and
+functions relating to the running job, among them `slices`, which
+holds the total number of parallel processes.
 
 ```python
-def analysis(prepare_res, sliceno, params):
+def analysis(prepare_res, sliceno, job):
     dw = prepare_res
-    files = options.files[sliceno::params.slices]
+    files = options.files[sliceno::job.params.slices]
     for fn in files:
         im = Image.open(fn)
         with open(fn, 'rb') as fh:
