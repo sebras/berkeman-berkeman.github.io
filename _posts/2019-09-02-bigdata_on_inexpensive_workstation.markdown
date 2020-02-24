@@ -83,14 +83,16 @@ the data should at least be detected (and preferably corrected).
 This machine is cheap, reliable, and powerful, and actually compares
 well to modern machines, which we will show in a future post.  We
 bought our machine from an Internet auction site in order to try it
-out.
+out.  The machine is actually from **2009**, but the CPUs in our
+example were manufactured in 2011.
+
 
 <p align="center"><img src="{{ site.url }}/assets/d20-eol.jpg" height="300"> </p>
 <p align="right"> (Image from lenovo.com) </p>
 
-The 2011 Lenovo D20 workstation is equipped with two CPUs providing in
-total 12 cores (24 "threads"), has 108GB RAM, and 2TB solid state
-disk.  Approximate price for a machine like this is below $1000.
+The workstation is equipped two CPUs providing in total 12 cores (24
+"threads"), has 108GB RAM, and 2TB solid state disk.  Approximate
+price for a machine like this is below $1000.
 
 ```
 Details:
