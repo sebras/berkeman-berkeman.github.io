@@ -17,7 +17,7 @@ then it has been the core tool in a number of studies and live
 production recommendation systems. In 2016, Expertmaker was acquired
 by eBay.
 
-The Accelerator is released as open source by eBay under the Apache
+**The Accelerator is released as open source by eBay** under the Apache
 V2.0 license, and is updated continuously.
 
 
