@@ -274,7 +274,8 @@ size:
 <p align="left"><img src="{{ site.url }}/assets/performance_numbers_from_installman.jpg"> </p>
 
 
-This data is cut from the Accelerator's installation manual, and the
+This data is cut from an old version of the 
+<a href="https://berkeman.github.io/pdf/acc_install.pdf">Accelerator's installation manual</a>, and the
 corresponding code is open sourced by eBay.  Note that all numbers are
 produced using high level Python programs, and that the `csvimport`
 method has been improved significantly in later versions of the
