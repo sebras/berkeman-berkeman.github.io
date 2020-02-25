@@ -8,7 +8,7 @@ Install directly from PyPI:
 
 `pip install accelerator`
 
-See this [blog post](https://exax.org/example/2019/10/30/initialise.html) for more information.
+See this [blog post](https://exax.org/documentation/2019/10/30/initialise.html) for more information.
 
 
 The Accelerator projects has been built, tested, and runs on:

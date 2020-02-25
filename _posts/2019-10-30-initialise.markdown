@@ -2,7 +2,7 @@
 layout: post
 title:  "Accelerator Installation"
 date:   2019-10-30 00:00:00
-categories: example
+categories: documentation
 ---
 
 
